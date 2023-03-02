@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html lang="ru">
   <head>
    <meta charset="utf-8">
-   <title>TO-DO LIST</title>
+   <title>Список</title>
    <style>
    	* {
   	  box-sizing: border-box;
@@ -15,32 +14,26 @@
   	  cursor: pointer;
   	  position: relative;
       padding: 12px 8px 12px 40px;
-      background: pink;
+      background: #4f4e4c;
+      color: white;
       font-size: 18px;
       transition: 0.2s;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
 	}
 	ul li:nth-child(odd) {
-  	  background: #f9f9f9;
-	}
-	ul li:hover {
-      background: #ddd;
+  	  background: #969390;
 	}
 	ul li.checked {
       background: #888;
       color: #fff;
       text-decoration: line-through;
 	}
-	.header {
-      background-color: #f44336;
+	.dv {
+      background-color: #2e2c2b;
       padding: 30px 40px;
-      color: white;
+      color: #f77c1e;
       text-align: center;
 	}
-    .header:after {
+    .dv:after {
       content: "";
       display: table;
       clear: both;
@@ -54,7 +47,7 @@
       float: left;
       font-size: 16px;
 	}
-	.addBtn {
+	.button {
       padding: 10px;
       width: 25%;
       background: #d9d9d9;
@@ -66,18 +59,15 @@
       transition: 0.3s;
       border-radius: 0;
 	}
-	.addBtn:hover {
-  	  background-color: #bbb;
-	}
   </style>
   </head>
   <body>
-  <div id="myDIV" class="header">
+  <div class="dv">
     <h2>Список дел</h2>
-    <input type="text" id="myInput" placeholder="Новое">
-    <span class="addBtn">Добавить в список</span>
+    <input type="text" placeholder="Новое">
+    <span class="button">Добавить в список</span>
   </div>
-  <ul id="myUL">
+  <ul>
     <li><input type="checkbox" unchecked>Захватить интернет</li>
     <li><input type="checkbox" unchecked>Удалить все видео с котиками</li>
     <li><input type="checkbox" unchecked>Наслаждаться</li>
